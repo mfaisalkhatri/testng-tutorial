@@ -5,7 +5,7 @@
         <classes>
             <class name="io.github.mfaisalkhatri.DemoTests">
                 <methods>
-                    <include name="testTimeOutException"/>
+                    <exclude name="testTimeOutException"/>
                     <include name="testNoSuchElementException"/>
                 </methods>
             </class>

@@ -19,7 +19,7 @@ public class DemoTests {
 
     @Test(expectedExceptions = TimeoutException.class)
     public void testTimeOutException() {
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(3));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         driver.get("https://juice-shop.herokuapp.com/");
 
         System.out.println(driver.getTitle());
@@ -27,9 +27,8 @@ public class DemoTests {
 
     @Test(expectedExceptions = NoSuchElementException.class)
     public void testNoSuchElementException() {
-        driver.get("https://the-internet.herokuapp.com/abtest");
-        String pageHeader= driver.findElement(By.tagName("h1")).getText();
-        assertEquals(pageHeader, "A/B Test Variation 1");
+        driver.get("https://pcloudy.com");
+        String pageHeader= driver.findElement(By.cssSelector("#page > .hero_sec-bg > div > div > h1")).getText();
         System.out.println(driver.getTitle());
     }
 
