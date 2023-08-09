@@ -1,4 +1,4 @@
-package io.github.mfaisalkhatri;
+package io.github.mfaisalkhatri.drivermanager;
 
 import lombok.Getter;
 

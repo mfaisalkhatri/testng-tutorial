@@ -16,6 +16,7 @@
         <selenium.java.version>4.11.0</selenium.java.version>
         <testng.version>7.8.0</testng.version>
         <lombok.version>1.18.28</lombok.version>
+        <apache-commonsio.version>2.13.0</apache-commonsio.version>
         <maven.compiler.version>3.11.0</maven.compiler.version>
         <surefire-version>3.1.2</surefire-version>
         <java.release.version>17</java.release.version>
@@ -44,6 +45,13 @@
                 <version>${lombok.version}</version>
                 <scope>provided</scope>
             </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${apache-commonsio.version}</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>

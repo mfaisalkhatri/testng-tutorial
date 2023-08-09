@@ -1,4 +1,4 @@
-package io.github.mfaisalkhatri;
+package io.github.mfaisalkhatri.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;

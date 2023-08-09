@@ -1,4 +1,4 @@
-package io.github.mfaisalkhatri;
+package io.github.mfaisalkhatri.drivermanager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,6 +18,7 @@ public class DriverManager {
         } else {
             setupChromeDriver();
         }
+       // manageTimeOut();
     }
 
     public WebDriver getDriver() {
@@ -37,6 +38,6 @@ public class DriverManager {
     }
 
     private void manageTimeOut() {
-        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+        this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 }
