@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Testing data attributes using Selenium">
-    <test name="Data attributes test">
+    <listeners>
+        <listener class-name="io.github.mfaisalkhatri.listeners.TestListeners"/>
+    </listeners>
+`    <test name="TestNG tutorial test" enabled="false">
         <classes>
-            <class name="io.github.mfaisalkhatri.DemoTests">
+            <class name="io.github.mfaisalkhatri.tests.DemoTests">
                 <methods>
                     <include name="testTimeOutException"/>
                     <include name="testNoSuchElementException"/>
@@ -11,4 +14,15 @@
             </class>
         </classes>
     </test> <!-- Test -->
+    <test name="TestNG failed test screenshot capture tests">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="io.github.mfaisalkhatri.tests.LambdaTestEcommerceTests">
+                <methods>
+                    <include name="testLoginPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+
 </suite> <!-- Suite -->
